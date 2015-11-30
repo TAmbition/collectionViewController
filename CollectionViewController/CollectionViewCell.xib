@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VxA-MR-vTw" customClass="CollectionViewCell" customModule="CollectionViewController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuN-Fb-bOx">
+                        <rect key="frame" x="15" y="0.0" width="49" height="45"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="WHZ-Iw-jyI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1df-Hp-9mT">
+                        <rect key="frame" x="0.0" y="0.0" width="41" height="45"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="duu-fx-CAG"/>
+                            <constraint firstAttribute="height" constant="45" id="kwR-dW-as0"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znC-fo-vSl">
+                        <rect key="frame" x="5" y="45" width="315" height="2"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.73999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="CoO-A4-E9J"/>
+                        </constraints>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hKH-NM-UD9">
+                        <rect key="frame" x="0.0" y="47" width="320" height="57"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="znC-fo-vSl" firstAttribute="top" secondItem="1df-Hp-9mT" secondAttribute="bottom" id="5fk-6G-QKA"/>
+                <constraint firstItem="znC-fo-vSl" firstAttribute="leading" secondItem="VxA-MR-vTw" secondAttribute="leading" constant="5" id="7bg-Sq-0Rt"/>
+                <constraint firstItem="znC-fo-vSl" firstAttribute="top" secondItem="LuN-Fb-bOx" secondAttribute="bottom" id="81c-2n-WPT"/>
+                <constraint firstItem="hKH-NM-UD9" firstAttribute="top" secondItem="znC-fo-vSl" secondAttribute="bottom" id="Ehh-1e-1ZK"/>
+                <constraint firstItem="hKH-NM-UD9" firstAttribute="top" secondItem="znC-fo-vSl" secondAttribute="bottom" id="Hje-xl-Dgr"/>
+                <constraint firstAttribute="bottom" secondItem="hKH-NM-UD9" secondAttribute="bottom" id="JPj-Ne-HQ5"/>
+                <constraint firstItem="1df-Hp-9mT" firstAttribute="leading" secondItem="VxA-MR-vTw" secondAttribute="leading" id="LwR-Vd-B0R"/>
+                <constraint firstItem="1df-Hp-9mT" firstAttribute="top" secondItem="VxA-MR-vTw" secondAttribute="top" id="MA8-27-lq1"/>
+                <constraint firstItem="LuN-Fb-bOx" firstAttribute="top" secondItem="VxA-MR-vTw" secondAttribute="top" id="Nq2-y5-MB5"/>
+                <constraint firstItem="hKH-NM-UD9" firstAttribute="leading" secondItem="VxA-MR-vTw" secondAttribute="leading" id="S4j-IT-j9R"/>
+                <constraint firstItem="LuN-Fb-bOx" firstAttribute="leading" secondItem="VxA-MR-vTw" secondAttribute="leading" constant="15" id="cbr-Wb-6IR"/>
+                <constraint firstAttribute="trailing" secondItem="znC-fo-vSl" secondAttribute="trailing" id="kmY-as-buf"/>
+                <constraint firstAttribute="trailing" secondItem="hKH-NM-UD9" secondAttribute="trailing" id="rEi-zV-iQU"/>
+                <constraint firstAttribute="trailing" secondItem="LuN-Fb-bOx" secondAttribute="trailing" constant="251" id="wY9-4h-Vg8"/>
+            </constraints>
+            <size key="customSize" width="50" height="115"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wY9-4h-Vg8"/>
+                    <exclude reference="Hje-xl-Dgr"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backButton" destination="1df-Hp-9mT" id="urM-Vr-Usx"/>
+                <outlet property="textView" destination="hKH-NM-UD9" id="zVa-kt-iDg"/>
+                <outlet property="titleLabel" destination="LuN-Fb-bOx" id="3XM-TQ-e3T"/>
+                <outlet property="titleLine" destination="znC-fo-vSl" id="Ays-45-Xhd"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="313.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
